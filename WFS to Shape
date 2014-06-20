@@ -1,0 +1,1 @@
+ogr2ogr  -f 'ESRI Shapefile' "out.shp" "WFS:in"
