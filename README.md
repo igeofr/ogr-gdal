@@ -1,5 +1,6 @@
 OGR-GDAL
 ========
+
 Commandes OGR/GDAL
 
 OGR2OGR :
@@ -19,4 +20,8 @@ GDALTINDEX :
 
 ```
 find /Users/.../ -name '*.jpg' -exec gdaltindex /Users/.../index.shp {} \;
+```
+Autres commandes utiles : 
+```
+ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 ```
