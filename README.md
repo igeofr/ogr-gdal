@@ -2,7 +2,12 @@ OGR-GDAL
 ========
 Commandes OGR/GDAL
 
-OGR2OGR : 
+OGR2OGR :
+- Convertion d'un shape 2D en dxf 3D
+```
+ogr2ogr -f "DXF" CdN_AUTOCAD.dxf CdN.shp -zfield "ELEVATION"
+```
+
 - Permet de télécharger des données à partir d'un flus WFS
 ```
 ogr2ogr  -f 'ESRI Shapefile' "out.shp" "WFS:in"
