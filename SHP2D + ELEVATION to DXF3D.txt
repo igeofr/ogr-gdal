@@ -1,1 +1,0 @@
-ogr2ogr -f "DXF" CdN_AUTOCAD.dxf CdN.shp -zfield "ELEVATION"
