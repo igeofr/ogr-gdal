@@ -1,7 +1,7 @@
 OGR-GDAL
 ========
 
-**Commandes OGR/GDAL**
+**Commandes OGR/GDAL :**
 
 OGR2OGR :
 - Convertion d'un shape 2D en dxf 3D
@@ -19,7 +19,7 @@ GDALTINDEX :
 find /Users/.../ -name '*.jpg' -exec gdaltindex /Users/.../index.shp {} \;
 ```
 
-**Autres commandes utiles** 
+**Autres commandes utiles :** 
 ```
 ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 ```
