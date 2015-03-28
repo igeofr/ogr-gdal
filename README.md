@@ -19,7 +19,7 @@ GDALTINDEX :
 find /Users/.../ -name '*.jpg' -exec gdaltindex /Users/.../index.shp {} \;
 ```
 
-** Autres commandes utiles ** 
+**Autres commandes utiles** 
 ```
 ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 ```
