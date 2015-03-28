@@ -5,7 +5,7 @@ Commandes OGR/GDAL
 OGR2OGR :
 - Convertion d'un shape 2D en dxf 3D
 ```
-ogr2ogr -f "DXF" CdN_AUTOCAD.dxf CdN.shp -zfield "ELEVATION"
+ogr2ogr -f "DXF" out.dxf in.shp -zfield "ELEVATION"
 ```
 
 - Permet de télécharger des données à partir d'un flus WFS
