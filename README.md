@@ -20,6 +20,7 @@ find /Users/.../ -name '*.jpg' -exec gdaltindex /Users/.../index.shp {} \;
 ```
 
 **Autres commandes utiles :** 
+- Permet de lister les fichiers dans un fichier texte
 ```
 ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 ```
