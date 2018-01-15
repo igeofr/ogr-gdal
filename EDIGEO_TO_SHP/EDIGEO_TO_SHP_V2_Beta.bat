@@ -28,7 +28,6 @@ for /f "tokens=*" %%A in ('dir /b /ad "%WORKSPACE%"') do (
 
 			call ogr2ogr -f "ESRI shapefile" -s_srs EPSG:2154 -t_srs EPSG:3944 -append "%WORKSPACE%\FUSION\%%~nf_%ANNEE%.shp" "%%f"
 			
-			call ogrinfo -dialect sqlite -sql "select distinct geometry from %%~nf_%ANNEE%" "%WORKSPACE%\FUSION\%%~nf_%ANNEE%.shp
 		)
 	)
 	
