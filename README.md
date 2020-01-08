@@ -18,6 +18,9 @@ GDALTINDEX :
 ```
 find /Users/.../ -name '*.jpg' -exec gdaltindex /Users/.../index.shp {} \;
 ```
+```
+find ./ -type f \( -iname \*.jp2 -o -iname \*.JP2 \) -exec gdaltindex /Users/.../index.shp {} \;
+```
 
 **Autres commandes utiles :** 
 - Permet de lister les fichiers dans un fichier texte
