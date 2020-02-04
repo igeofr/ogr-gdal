@@ -12,7 +12,7 @@ ogr2ogr -f "DXF" out.dxf in.shp -zfield "ELEVATION"
 ```
 ogr2ogr  -f 'ESRI Shapefile' "out.shp" "WFS:in"
 ```
-- Changer l'encodage de fichiers shp ou dbf - UTF-8 > ISO-8859-1
+- Changer l'encodage d'un fichier dbf - UTF-8 > ISO-8859-1
 ```
 /Applications/LibreOffice.app/Contents/MacOS/soffice --calc --convert-to dbf:dBASE:1 --infilter=dBASE:76 ./test/*.dbf
 ```
