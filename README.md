@@ -14,8 +14,7 @@ ogr2ogr  -f 'ESRI Shapefile' "out.shp" "WFS:in"
 ```
 - Changer l'encodage de fichiers shp ou dbf - UTF-8 > ISO-8859-1
 ```
-export SHAPE_ENCODING="UTF-8"
-ogr2ogr -f "ESRI Shapefile" OUT.dbf IN.dbf -lco ENCODING=ISO-8859-1
+/Applications/LibreOffice.app/Contents/MacOS/soffice --calc --convert-to dbf:dBASE:1 --infilter=dBASE:76 ./test/*.dbf
 ```
 
 GDALTINDEX :
