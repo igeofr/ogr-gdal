@@ -36,3 +36,7 @@ ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 ```
 /Applications/LibreOffice.app/Contents/MacOS/soffice --calc --convert-to csv:"Text - txt - csv (StarCalc):44,34,ANSI,1,,0,false,true,true" --infilter=dBASE:76 ./test/*.dbf
 ```
+
+**Autres sources :**
+[gdal/ogr cheatsheet](https://github.com/glw/gdalcheatsheet)
+[Cheat sheet for GDAL/OGR command-line geodata tools](https://github.com/dwtkns/gdal-cheat-sheet)
