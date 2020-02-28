@@ -40,4 +40,4 @@ ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 **Autres sources :**
 * [gdal/ogr cheatsheet](https://github.com/glw/gdalcheatsheet)
 * [Cheat sheet for GDAL/OGR command-line geodata tools](https://github.com/dwtkns/gdal-cheat-sheet)
-* [Creating BigTiff COGS for raster RGB photos from a tile mosaic directory using GDAL](https://github.com/dwtkns/gdal-cheat-sheet)
+* [Creating BigTiff COGS for raster RGB photos from a tile mosaic directory using GDAL](https://gist.github.com/palmerj/ac1e19eb81c986d9634e3a3de7cdfc3d)
