@@ -4,13 +4,17 @@ OGR-GDAL et autres
 **Commandes OGR/GDAL :**
 
 OGR2OGR :
-- Convertion d'un shape 2D en dxf 3D
+- Conversion d'un shapefile 2D en dxf 3D
 ```
 ogr2ogr -f "DXF" out.dxf in.shp -zfield "ELEVATION"
 ```
 - Téléchargement de données à partir d'un flus WFS
 ```
 ogr2ogr  -f 'ESRI Shapefile' "out.shp" "WFS:in"
+```
+- Conversion d'un shapefile en MID/MIF
+```
+ogr2ogr --config SHAPE_ENCODING "utf-8" -progress -lco ENCODING=utf-8 -f "MapInfo File" -dsco "FORMAT=MIF" -dsco "SPATIAL_INDEX_MODE=QUICK/OPTIMIZED" "OUT_FOLDER" "IN_FOLDER"
 ```
 
 GDALTINDEX :
