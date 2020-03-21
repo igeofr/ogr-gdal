@@ -40,6 +40,10 @@ ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 ```
 /Applications/LibreOffice.app/Contents/MacOS/soffice --calc --convert-to csv:"Text - txt - csv (StarCalc):44,34,ANSI,1,,0,false,true,true" --infilter=dBASE:76 ./test/*.dbf
 ```
+- Permet de remplacer une chaine de caractères
+```
+for i in *; do mv "$i" "$(echo $i | tr "85_" "1985_")"; done : Remplacer des caractères dans des dossiers
+```
 
 **Autres sources :**
 * [gdal/ogr cheatsheet](https://github.com/glw/gdalcheatsheet)
