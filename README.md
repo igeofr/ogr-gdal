@@ -71,6 +71,23 @@ ls /Volumes/<nom de ton volume>/<...>/* > tonfichier.txt
 for i in *; do mv "$i" "$(echo $i | tr "85_" "1985_")"; done : Remplacer des caractères dans des dossiers
 ```
 
+### WFS vers PG :
+
+```sh
+ogr2ogr \
+    -progress \
+    -append \
+    -f "PostgreSQL" PG:"host='$C_HOST' user='$C_USER' dbname='$C_DBNAME' password='$C_PASSWORD' schemas='$C_SCHEMA" \
+    -nln 'geodesie_repere_nivellement' \
+    "wfs:https://wxs.ign.fr/geodesie/geoportail/wfs?VERSION=2.0.0&SERVICE=WFS&REQUEST=GetFeature&typename=BDGEODESIQUE:rn&BBOX=43.6%2C4%2C43.8%2C4.2%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326" "BDGEODESIQUE:rn" \
+    -s_srs 'EPSG:4326' \
+    -t_srs 'EPSG:2154' \
+    --config PG_USE_COPY YES \
+    --config OGR_TRUNCATE YES \
+    --debug ON \
+    --config CPL_LOG './'$REPER_LOGS'/integration_geodesie_repere_nivellement.log'
+```    
+
 **Autres sources :**
 * [gdal/ogr cheatsheet](https://github.com/glw/gdalcheatsheet)
 * [Cheat sheet for GDAL/OGR command-line geodata tools](https://github.com/dwtkns/gdal-cheat-sheet)
